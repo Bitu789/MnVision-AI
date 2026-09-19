@@ -1,7 +1,7 @@
 // src/api.js
 export async function predictProspectivity(payload) {
   try {
-    const response = await fetch("https://mnvision-ai.onrender.com", {
+    const response = await fetch("https://mnvision-ai.onrender.com/api/prospectivity/predict", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(payload),
